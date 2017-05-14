@@ -12,9 +12,10 @@
 	float: left;
 	font-family: 'Roboto', sans-serif;
 	font-size: 23px;
-	font-weight: 900;
+	font-weight: 700;
 	margin-left: 20px;
 	margin-top: 18px;
+	letter-spacing: 1px;
 }
 
 .keep {
