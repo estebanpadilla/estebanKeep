@@ -8,6 +8,14 @@
 	overflow: scroll;
 }
 
+.menuButton {
+	float: left;
+	width: 55px;
+	height: 55px;
+	margin-top: 5px;
+	margin-left: 5px;
+}
+
 .esteban {
 	float: left;
 	font-family: 'Roboto', sans-serif;
