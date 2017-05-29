@@ -1,8 +1,3 @@
-<div class="notesContainer">
-	<app-note></app-note>
-	<app-note></app-note>
-	<app-note></app-note>
-	<app-note></app-note>
-	<app-note></app-note>
-	<app-note></app-note>
+<div class="notesContainer" *ngFor='let note of notes'>
+	<app-note [note]='note'></app-note>
 </div>

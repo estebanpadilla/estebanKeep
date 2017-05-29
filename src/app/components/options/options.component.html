@@ -1,5 +1,18 @@
-<div class="optionsContainer">
+<div *ngIf='!isShowingNoteTxtFields' class='optionsContainer' (click)='onTakeNote()'>
+	<div class="takeNoteForm">
+		<div class="takeNote">
+			<p>Take note...</p>
+		</div>
+	</div>
+</div>
+
+<div *ngIf='isShowingNoteTxtFields' class='optionsContainer'>
 	<div class="optionsForm">
+		<input type="text" [value]='title' (change)='onTitleChange($event)' class='title'>
+		<input type="text" [value]='text' (change)='onTextChange($event)' class='text'>
+		<div class='btnContainer'>
+			<button (click)='onDone()' class='doneBtn'>Done</button>
+		</div>
 
 	</div>
 </div>

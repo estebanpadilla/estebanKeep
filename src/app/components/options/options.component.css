@@ -1,11 +1,81 @@
 .optionsContainer {
 	width: 100%;
-	height: 100px;
+	height: auto;
 	overflow: scroll;
 	margin-top: 80px;
 }
 
 .optionsForm {
+	width: 80%;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #f5f5f5;
+	box-shadow: 0px 2px 5px #959595;
+	display: table;
+}
+
+.title {
+	width: 90%;
+	border: none;
+	outline: none;
+	background-color: transparent;
+	font-size: 17px;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+	float: left;
+	margin-left: 20px;
+	margin-top: 20px;
+	display: table-cell;
+	word-wrap: break-word;
+	word-break: break-word;
+}
+
+.text {
+	width: 90%;
+	border: none;
+	outline: none;
+	background-color: transparent;
+	font-size: 17px;
+	font-family: Courier New, Courier, monospace;
+	float: left;
+	margin-left: 20px;
+	margin-top: 20px;
+	display: table-cell;
+	vertical-align: middle;
+	word-wrap: break-word;
+	word-break: break-word;
+}
+
+.doneBtn {
+	float: right;
+	display: table-cell;
+	vertical-align: middle;
+	height: 30px;
+	width: 60px;
+	margin-right: 10px;
+	margin-top: 10px;
+	font-size: 15px;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+	border: none;
+	outline: none;
+	background-color: transparent;
+	border-radius: 5px;
+}
+
+.doneBtn:hover {
+	background-color: #e6e6e6;
+}
+
+.btnContainer {
+	float: right;
+	height: 50px;
+	width: 100%;
+	display: table-cell;
+}
+
+.takeNoteForm {
 	width: 80%;
 	height: 50px;
 	margin-left: auto;
@@ -13,4 +83,11 @@
 	margin-top: 25px;
 	background-color: #f5f5f5;
 	box-shadow: 0px 2px 5px #959595;
+}
+
+.takeNote p {
+	font-family: Courier New, Courier, monospace;
+	font-size: 17px;
+	margin-left: 20px;
+	display: inline-table;
 }

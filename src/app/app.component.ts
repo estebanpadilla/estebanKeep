@@ -1,5 +1,6 @@
 import { Component, AfterViewInit, ViewChild } from '@angular/core';
 import { MenuComponent } from './components/menu/menu.component';
+import { Note } from './models/Note';
 
 @Component({
   selector: 'app-root',
@@ -11,6 +12,7 @@ export class AppComponent implements AfterViewInit {
 
   title: string = 'Esteban';
   subtitle: string = 'Keep';
+  notes: Note[] = [];
 
   @ViewChild(MenuComponent)
   private menuComponent: MenuComponent;
@@ -20,5 +22,9 @@ export class AppComponent implements AfterViewInit {
 
   toogleMenu() {
     this.menuComponent.toogle();
+  }
+
+  receiveNote(note) {
+    this.notes.push(note);
   }
 }

@@ -1,4 +1,4 @@
 <app-menu></app-menu>
 <app-header [title]='title' [subtitle]='subtitle' (toogleMenu)="toogleMenu()"></app-header>
-<app-options></app-options>
-<app-notes></app-notes>
+<app-options (sendNote)='receiveNote($event)'></app-options>
+<app-notes [notes]='notes'></app-notes>
