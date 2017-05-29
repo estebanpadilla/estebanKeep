@@ -11,9 +11,7 @@ export class OptionsComponent implements OnInit {
   @Output() sendNote = new EventEmitter();
   title = 'title';
   text = 'text';
-  isShowingNoteTxtFields = true;
-
-  titleEnter = false;
+  isShowingNoteTxtFields = false;
 
   constructor() {
 

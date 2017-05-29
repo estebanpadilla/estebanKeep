@@ -10,6 +10,8 @@ import { NoteComponent } from './components/note/note.component';
 import { NotesComponent } from './components/notes/notes.component';
 import { OptionsComponent } from './components/options/options.component';
 
+import { NoteService } from './services/note.service';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +26,7 @@ import { OptionsComponent } from './components/options/options.component';
     FormsModule,
     HttpModule
   ],
-  providers: [],
+  providers: [NoteService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
