@@ -8,18 +8,14 @@ import { Note } from './../../models/Note';
 })
 export class OptionsComponent implements OnInit {
 
+  //2. Crear la variable para el event
   @Output() sendNote = new EventEmitter();
-  title = 'title';
-  text = 'text';
+  titulo = 'title';
+  texto = 'text';
   isShowingNoteTxtFields = false;
 
-  constructor() {
-
-  }
-
-  ngOnInit() {
-
-  }
+  constructor() { }
+  ngOnInit() { }
 
   onfocusout(event) {
     console.log(event);
@@ -32,17 +28,18 @@ export class OptionsComponent implements OnInit {
 
 
   onDone() {
-    this.sendNote.emit(new Note(this.title, this.text));
+    //3. Use the event
+    this.sendNote.emit(new Note(this.titulo, this.texto));
     this.isShowingNoteTxtFields = false;
-    this.title = 'title';
-    this.text = 'text';
+    this.titulo = 'title';
+    this.texto = 'text';
   }
 
   onTitleChange(event) {
-    this.title = event.target.value;
+    this.titulo = event.target.value;
   }
 
   onTextChange(event) {
-    this.text = event.target.value;
+    this.texto = event.target.value;
   }
 }
